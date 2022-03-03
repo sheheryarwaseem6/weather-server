@@ -45,6 +45,9 @@ app.post("/talktochatbot", async (req, res) => {
     });
 
 })
+app.get("/", (req, res) => {
+    res.send("Welcome to home");
+})
 app.get("/profile", (req, res) => {
     res.send("here is your profile");
 })
